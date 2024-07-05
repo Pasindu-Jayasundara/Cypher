@@ -20,7 +20,7 @@ public class Cypher {
 
     private static SecretKey secretKey;
 
-    public static void generateOrLoadSecretKey() throws NoSuchAlgorithmException, IOException, InvalidKeySpecException {
+    private static void generateOrLoadSecretKey() throws NoSuchAlgorithmException, IOException, InvalidKeySpecException {
         File keyFile = new File(KEY_FILE);
 
         if (keyFile.exists()) {
